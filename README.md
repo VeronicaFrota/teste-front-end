@@ -1,5 +1,5 @@
 # Teste iCasei: Front-End
-- Este projeto foi criado com o Angular CLI versão 7.3.5
+- Este projeto foi criado com o Angular CLI versão 7.3.5<br/>
 Implementação do teste de front-and da ICasei, o teste consiste em desenvolver uma
 aplicação HTML5 utilizando diretrizes do Google Material Design, framework JS (Angular) e
 API de busca do YouTube.
