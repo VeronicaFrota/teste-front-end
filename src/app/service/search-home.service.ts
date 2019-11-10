@@ -18,8 +18,6 @@ export class SearchHomeService {
 		return this.httpClient.get<any>(`https://www.googleapis.com/youtube/v3/search?part=id,snippet&q=${termoBusca}&key=${apiKey}`).pipe(
 			tap(response => {
 				this.items = response.items
-				console.log("Agora estou no service home, GOTCHA")
-				console.log(this.items)
 			})
 		)
 	}

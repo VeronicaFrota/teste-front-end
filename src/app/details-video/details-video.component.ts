@@ -18,7 +18,6 @@ export class DetailsVideoComponent implements OnInit {
 
 	ngOnInit() {
 		this.item = this.searchResultService.item			// Para ter acesso as informações do vídeo
-		console.log(this.item)
 	}
 
 }

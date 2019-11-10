@@ -29,7 +29,6 @@ export class DetailsComponent implements OnInit {
 
 	// Realiza a exibição e funcionalidade do video
 	player: YT.Player;
-	//private id: string = 'tfIAjeFbDKo';
 
 	savePlayer(player) {
 		this.player = player;
