@@ -15,4 +15,5 @@ Implementação do teste de front-and da ICasei, o teste consiste em desenvolver
 
 
 # Como executar
-Execute ng serve para executar a versão de desenvolvimento. Depois acesse http://localhost:4200/
+Execute ng serve para executar a versão de desenvolvimento.<br/>
+Depois acesse http://localhost:4200/
