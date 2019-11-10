@@ -1,0 +1,4 @@
+<!--Componente responsável por exibir o componente de exibição da listagem de videos procurado-->
+<div class="container flex">
+	<app-details [item]="item" (detalhar)="detalharVideo($event)" *ngFor="let item of itens"></app-details>
+</div>

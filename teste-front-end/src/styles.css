@@ -1,0 +1,17 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 414px;
+    height: 100px;
+    margin: 5px;
+}
+
+.line-break {
+	width: 100%;
+}

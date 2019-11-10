@@ -1,0 +1,14 @@
+
+<!--Componente responsável por exibir o componente de detais de forma customizada para que
+sejam exibidos botões extras (tais como like, delike e visualizar), remoção do botão de 
+detalhes e deslocamento do titulo para cima do vídeo-->
+
+<button mat-fab class ="btnVoltar" matTooltip="Voltar" routerLink="/search-results">
+	<mat-icon>arrow_back</mat-icon>
+</button>
+
+<div style="margin-left: 447px; margin-top: 65px;">
+	<app-details [item]="item" [desligaBotaoDetalhe]="true" [desligaTituloDown]="true" [deligaBotaoLike]="true" [deligaBotaoVisualizacao]="true"></app-details>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,8 @@
+.mat-card-title {
+    max-width: none !important;
+    margin-left: -15px !important;
+}
+
+.subTitle {
+    color: #bbb5b5;
+}
