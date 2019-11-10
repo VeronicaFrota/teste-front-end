@@ -13,7 +13,7 @@ Flex Layout 7.0.0
 
 
 # Como instalar
-Baixe ou clone este repositório usando git clone https://github.....
+Baixe ou clone este repositório usando git clone https://github.com/VeronicaFrota/teste-front-end.git
 Dentro do diretório, instale as dependências usando npm install.
 
 
