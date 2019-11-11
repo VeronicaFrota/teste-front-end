@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Item } from '../model/search-home.model';
 
-// @Injectable()
 @Injectable({
 	providedIn: 'root'
 })

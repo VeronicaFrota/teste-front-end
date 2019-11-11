@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Item } from '../model/search-home.model';
-import { tap } from 'rxjs/operators';
 
 @Injectable({
 	providedIn: 'root'
