@@ -28,12 +28,12 @@ export class SearchHomeComponent implements OnInit {
 	}
 
 	procurar() {
-		this.searchHomeService.searchHomeItems(this.form.value.procura, 'AIzaSyBC8vG940wZ2veXhZemDHcydLi39QdohAQ')
+		this.searchHomeService.searchHomeItems(this.form.value.procura)
 		.subscribe( retorno => {
-				if(this.searchHomeService.items.length == 0) {			// Verifica se o termo buscado não foi encontrado
-					this.encoutrouItem = false							// Caso não foi encontrado, aciona false, disparando a mensagem de erro na index
+				if(this.searchHomeService.items.length == 0) {		// Verifica se o termo buscado não foi encontrado
+					this.encoutrouItem = false						// Caso não foi encontrado, aciona false, disparando a mensagem de erro na index
 				} else {
-					this.route.navigate(['/search-results'])			// Caso o termo seja encontrado, redireciona para a listagem de vídeos
+					this.route.navigate(['/search-results'])		// Caso o termo seja encontrado, redireciona para a listagem de vídeos
 				}				
 			},
 			(error =>  {

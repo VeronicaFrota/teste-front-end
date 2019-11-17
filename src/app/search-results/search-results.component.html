@@ -1,4 +1,8 @@
 <!--Componente responsável por exibir o componente de exibição da listagem de videos procurado-->
 <div class="container flex">
-	<app-details [item]="item" (detalhar)="detalharVideo($event)" *ngFor="let item of itens"></app-details>
+	<app-details [item]="item" (detalhar)="detalharVideo($event)" *ngFor="let item of searchHomeService.items"></app-details>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="center center">
+	<button mat-stroked-button style="width: 25%; background-color: #f6f5f5; margin-bottom: 12px;" (click)="carregarMaisVideos()">Carregar mais Vídeos</button>
 </div>

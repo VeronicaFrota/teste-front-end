@@ -12,10 +12,11 @@ import { SearchResultsService } from '../service/search-results.service';
 export class SearchResultsComponent implements OnInit {
 
 	itens : Item[]
+	adicionaItens : Item[]
 
 	constructor(
-		private searchHomeService: SearchHomeService,
-		private searchResultService : SearchResultsService,
+		public searchHomeService: SearchHomeService,
+		public searchResultService : SearchResultsService,
 		private route : Router
 	) {	}
 
@@ -27,6 +28,17 @@ export class SearchResultsComponent implements OnInit {
 	detalharVideo(item : Item) {
 		this.searchResultService.item = item
 		this.route.navigate(['/details-video'])
+	}
+
+	carregarMaisVideos() {
+		this.searchHomeService.searchHomeItems(this.searchHomeService.termoBusca)
+			.subscribe(
+				(retorno) => {
+					this.itens = this.itens.concat(retorno.items)	// Adiciona a lista de itens os novos videos que serão carregados após clicar no botão
+				},
+				(error) => {
+				}
+			)
 	}
 
 }

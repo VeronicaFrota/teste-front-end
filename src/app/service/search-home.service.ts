@@ -9,14 +9,27 @@ import { Item } from '../model/search-home.model';
 })
 export class SearchHomeService {
 
-	constructor(private httpClient: HttpClient) { }
+	constructor(
+		private httpClient: HttpClient,
+	) { }
 
-	items : Item[]
+	items : Item[] = []
+	pageToken : string
+	termoBusca : string
 
-	public searchHomeItems(termoBusca : any , apiKey : string): Observable<any> {
-		return this.httpClient.get<any>(`https://www.googleapis.com/youtube/v3/search?part=id,snippet&q=${termoBusca}&key=${apiKey}`).pipe(
+	/* ${this.pageToken ? this.pageToken : '' } = Ternário para verificar se existe uma pageToken, caso for a primeira requisição, não 
+	*  possui token, caso for a próxima requisição, pega o próximo token com os vídeos
+	*/
+	public searchHomeItems(termoBusca : any): Observable<any> {
+		return this.httpClient.get<any>(`https://www.googleapis.com/youtube/v3/search?part=id,snippet&q=${termoBusca}&key=AIzaSyBC8vG940wZ2veXhZemDHcydLi39QdohAQ&type=video&maxResults=10&order=viewCount&pageToken=${this.pageToken ? this.pageToken : '' }`).pipe(
 			tap(response => {
-				this.items = response.items
+
+				this.items = this.items.concat(response.items)	// Adiciona itens novos na lista já existente
+
+				this.pageToken = response.nextPageToken			// Pega o token da próximo página para carregar mais vídeos e assim adiciona-lo a lista já existente (linha 25)
+
+				this.termoBusca = termoBusca					// Salva na váriavel o termo de busca
+
 			})
 		)
 	}
