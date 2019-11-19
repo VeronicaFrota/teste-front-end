@@ -32,10 +32,8 @@ export class DetailsComponent implements OnInit {
 
 	savePlayer(player) {
 		this.player = player;
-		console.log('player instance', player);
 	}
 	onStateChange(event) {
-		console.log('player state', event.data);
 	}
 
 	/* Emite o evento quando for clicado, avisando para o componente de search-results que há 

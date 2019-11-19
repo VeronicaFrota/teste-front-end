@@ -1,11 +1,10 @@
 <form [formGroup]="form">
-	<div fxLayout="column" fxFlex="100" fxLayoutAlign="center" style="height: 500px; margin-top: 40px">
-
+	<div class="container" fxLayout="column" fxFlex="100" fxLayoutAlign="center">
 		<div fxLayoutAlign="center center">
 			<img src="../../assets/search.png" width="150px">
 		</div>
 
-		<div fxLayout="row" fxLayoutAlign="space-around stretch" fxFlex="50" style="margin-top: 40px">
+		<div class="formField" fxLayout="row" fxLayoutAlign="space-around stretch" fxFlex="50">
 			<mat-form-field fxFlex="80" fxFlex.gt-sm="70" fxFlex.gt-md="30">
 				<input matInput placeholder="Procurar video" formControlName="procura">
 				<button mat-icon-button matSuffix (click)="procurar()">

@@ -10,5 +10,5 @@ export const ROUTES: Routes = [
     { path: 'search-results', component: SearchResultsComponent },
     { path: 'details'       , component: DetailsComponent },
     { path: 'details-video' , component: DetailsVideoComponent },
-    { path: 'error-message' , component: ErrorMessageComponent }   
+    { path: 'error-message' , component: ErrorMessageComponent }
 ]

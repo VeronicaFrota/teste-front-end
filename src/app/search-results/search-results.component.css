@@ -16,3 +16,8 @@
 	text-align: center;
 	font-size: 1.5em;
 }
+.btnCarregarVideo {
+	width: 25%; 
+	background-color: #f6f5f5; 
+	margin-bottom: 12px;
+}

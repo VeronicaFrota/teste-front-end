@@ -2,7 +2,7 @@
 no video, tais como, botões, titulos, descrição, canal e etc -->
 
 <div class="flex">
-	<div class="item" style="margin-bottom: 435px;">
+	<div class="item">
 		<mat-card style="height: 468px;">
 			<!-- Quando for redirecionado para a página de details-video (visualizar um unico video) o título do video ficará em cima do video -->
 			<mat-card-header *ngIf="desligaTituloDown" fxLayout.gt-xs="row" fxLayout.xs="column">
@@ -19,7 +19,7 @@ no video, tais como, botões, titulos, descrição, canal e etc -->
 			<span class="subTitle">{{ item.snippet.channelTitle }}</span>
 
 			<!-- Quando estiver na página de details-video (visualizar um unico vídeo) o botão de like e deslike aparecerão -->
-			<div *ngIf="deligaBotaoLike" style="float: right;">
+			<div class="botaoLike" *ngIf="deligaBotaoLike">
 				<button mat-button>
 					<mat-icon>thumb_up</mat-icon> 9.999
 				</button>
@@ -33,14 +33,14 @@ no video, tais como, botões, titulos, descrição, canal e etc -->
 			</mat-card-content>
 
 			<!-- Quando estiver na página de details-video (visualizar um unico vídeo) o botão de visualização aparecerá -->
-			<div *ngIf="deligaBotaoVisualizacao" style="float: left; margin-top: -19px;	margin-left: -19px;">
+			<div class="botaoVisualizacao" *ngIf="deligaBotaoVisualizacao">
 				<button mat-button>
 					<mat-icon>visibility</mat-icon> 9.999
 				</button>				
 			</div>
 
 			<!-- Quando for redirecionado para a página de details-video (visualizar um unico video) o botão "Detalhes do vídeo" não aparecerá -->
-			<button *ngIf="!desligaBotaoDetalhe" mat-stroked-button style="width: 100%; margin-top: -8px;" (click)="detalharVideo()">Detalhes do Vídeo</button>
+			<button class="botaoDetalhe" *ngIf="!desligaBotaoDetalhe" mat-stroked-button (click)="detalharVideo()">Detalhes do Vídeo</button>
 		</mat-card>
 	</div>
 </div>

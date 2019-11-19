@@ -6,3 +6,22 @@
 .subTitle {
     color: #bbb5b5;
 }
+
+.botaoVisualizacao {
+    float: left;
+    margin-top: -19px;
+    margin-left: -19px;
+}
+
+.botaoDetalhe {
+    width: 100%;
+    margin-top: -8px;
+}
+
+.botaoLike {
+    float: right;
+}
+
+.item {
+    margin-bottom: 435px !important;
+}

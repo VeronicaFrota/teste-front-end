@@ -1,71 +1,71 @@
 export class Item {
-    kind: string                                //"youtube#searchListResponse"
-    etag: string                                //"\"j6xRRd8dTPVVptg711_CSPADRfg/5Jcl-1sE0tEqWKyUhOiQWuRzdOk\""
-    nextPageToken: string                       //"CAUQAA"
-    regionCode: string                          //"BR"
+    kind: string                                
+    etag: string                                
+    nextPageToken: string                       
+    regionCode: string                          
     pageInfo: {
-        totalResults: number                    //466936
-        resultsPerPage: number                  // 5
+        totalResults: number                    
+        resultsPerPage: number                  
     }
     items: [
         {
-            kind: string                       //"youtube#searchResult",
-            etag: string                       //"\"j6xRRd8dTPVVptg711_CSPADRfg/Je23eiFA10519tzXRMvKYK-sZks\"",
+            kind: string                       
+            etag: string                       
             id: {
-                kind: string                   //"youtube#channel",
-                channelId: string              //"UCmEClzCBDx-vrt0GuSKBd9g"
+                kind: string                   
+                channelId: string              
             },
             snippet: {
-                publishedAt: Date              //"2006-08-24T20:11:03.000Z",
-                channelId: string              //"UCmEClzCBDx-vrt0GuSKBd9g",
-                title: string                  //"Jovem Nerd",
-                description: string             //"Cinema, Quadrinhos, Séries, Games, Internet e Tecnologia são muito mais divertidos no Jovem Nerd! Conheça o site! http://www.jovemnerd.com.br E a loja ...",
+                publishedAt: Date              
+                channelId: string              
+                title: string                  
+                description: string            
                 thumbnails: {
                     default: {
-                        url: string             //"https://yt3.ggpht.com/-7fcw8siXHiA/AAAAAAAAAAI/AAAAAAAAAAA/_R0LxzpV7qk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                        url: string            
                     },
                     medium: {
-                        url: string             //"https://yt3.ggpht.com/-7fcw8siXHiA/AAAAAAAAAAI/AAAAAAAAAAA/_R0LxzpV7qk/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                        url: string            
                     },
                     high: {
-                        url: string             //"https://yt3.ggpht.com/-7fcw8siXHiA/AAAAAAAAAAI/AAAAAAAAAAA/_R0LxzpV7qk/s800-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                        url: string            
                     }
                 },
-                channelTitle: string           //"Jovem Nerd",
-                liveBroadcastContent: string   //"upcoming"
+                channelTitle: string           
+                liveBroadcastContent: string   
             }
         },
         {
-            kind: string                        //"youtube#searchResult",
-            etag: string                        //"\"j6xRRd8dTPVVptg711_CSPADRfg/9pISdn92PNTiADOQwZZJL7FiI_8\"",
+            kind: string                       
+            etag: string                       
             id: {
-                kind: string                    // "youtube#video",
-                videoId: string                 //"xZqDDwA4tnw"
+                kind: string                   
+                videoId: string                
             },
             snippet: {
-                publishedAt: string             //"2019-11-05T14:00:11.000Z",
-                channelId: string               //"UCmEClzCBDx-vrt0GuSKBd9g",
-                title: string                   //"Erros e Perdas | NerdTrader 04",
-                description: string             //"Link promoção Curso e Plataforma: http://bit.ly/2nurNOq Link abertura de conta: http://bit.ly/2q2ahTd YouTube Nelogica: http://bit.ly/2m4ZEwM Site da nova ...",
+                publishedAt: string            
+                channelId: string              
+                title: string                  
+                description: string            
                 thumbnails: {
                     default: {
-                        url: string             //"https://i.ytimg.com/vi/xZqDDwA4tnw/default.jpg",
-                        width: number           //120,
-                        height: number          //90
+                        url: string            
+                        width: number          
+                        height: number         
                     },
                     medium: {
-                        url: string             //"https://i.ytimg.com/vi/xZqDDwA4tnw/mqdefault.jpg",
-                        width: number           //320,
-                        height: number          //180
+                        url: string            
+                        width: number          
+                        height: number         
                     },
                     high: {
-                        url:string              //"https://i.ytimg.com/vi/xZqDDwA4tnw/hqdefault.jpg",
-                        width: number           //480,
-                        height: number          //360
+                        url:string             
+                        width: number          
+                        height: number         
                     }
                 },
-                channelTitle: string            //"Jovem Nerd",
-                liveBroadcastContent: string    //"none"
+                channelTitle: string           
+                liveBroadcastContent: string   
             }
         }
     ]
